@@ -1,0 +1,84 @@
+11-12-17
+
+Herramientas:
+    Sublime Text
+    mysql
+    mysqlworkbench
+    RVM: rubyversionmanager
+    Git
+
+Inconveniente de Ruby:
+	Problema de rendimiento, es mas lento que otras opciones como PHP o incluso java
+	
+Las versiones lts(long time support) son las apropiadas para produccion (se asegura soporte durante 4 o mas años)
+
+13-12-17
+
+Herramientas de diseño
+Front
+	Todo se apoya sobre javascript
+		Angular: proyectos medianos y grandes (prog orientada a objetos)
+		Vue.js: mas ligero pero menos estructurado, mejor para proyectos mas pequeños
+Back
+	Php
+	Java
+	Tiende a basarse en apis
+
+Imágenes
+	Programas de diseño de imagenes
+		Gimp como alternativa open source a Photoshop
+		Inkscape para imagenes vectoriales
+
+	Parámetros de optimizacion de imágenes
+		PPI (puntos por pulgada) maximo 72ppi (mas de 72 solo para impresión, en web no aporta)
+
+	Parametro alt de img,
+		Ponerlo siempre que sea posible. Si la imagen no es relevante (como los bullet de listas) se deja el alt en blanco alt=""
+Tablas
+	coldspan ="n" para que ocupe n celdas en horizontal
+	rowspan ="m" para que ocupe m celdas en vertical
+	th scope="col"/"row" celda de encabezado
+
+14-12-17
+
+Formularios
+	requiered para obligar a rellenar el campo
+	tabindex para cambiar el orden de salto al usar tabulador
+Editores web de html WYSIWYG (tienes lo que ves) cuidado con los estilos
+	ckeditor
+	tiny....
+Imagenes en web no poner mas de 72 puntos por pulgada porque no se va a mostrar, solo hace que la imagen pese mas. Si se maqueta para impresion entonces al menos 300 ppi.
+
+Zeplin
+	servicio web para hacer de puente entre diseñadores graficos y programadores, hace de estandar a la hora de definir los colores, fuentes, etc.
+Herramientas navegador
+	Firefox F12
+		Ventaja: se puede usar Borrador para probar funciones completas de .js
+	Chrome
+		Ventaja: mucha info sobre optimizacion para tiempos, etc.
+
+d3js
+	para infografias
+
+19-12-17
+Git
+	github gratis tiene que ser publico
+	gitlab permite proyectos privados
+	idealmente tener ambos
+
+	Branch
+	git branch (muestra todas las ramas y * en la activa)
+	git checkout name (mueve a la rama; hacer  un commit de la rama a abandonar antes)
+	git checkout -b name (crea y mueve a la rama)
+
+8-1-18
+typescript superset de js que entre otras cosas te da warnings para debug
+
+12-1-18
+Investigar Elixir http://elixir-lang.github.io/
+	como alternativa a RubyOnRails,PHP
+Python en bigData es el lenguaje que domina
+
+Lenguajes usados en Google:
+	Go https://golang.org/
+	Dart(gmail hecho en Dart) https://www.dartlang.org/

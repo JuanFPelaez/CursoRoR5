@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="" method="get" name="formulario" id="formulario">
+		<!-- Campo de texto-->
+		<p>
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" tabindex="2" placeholder="Nombre">
+		</p>
+		<!-- select-->
+		<p>
+			<label for="sexo">Sexo</label>
+			<select name="sexo" id="sexo" tabindex="4">
+				<option value="">Selecciona uno</option>
+				<option value="0">Hombre</option>
+				<option value="1">Mujer</option>
+			</select>
+		</p>
+		<!-- area de asunto-->
+		<p>
+			<label for="asunto">Asunto</label>
+			<textarea id="asunto" name="asunto" tabindex="1" placeholder="Expláyate"></textarea>
+		</p>
+		<!-- campo de correo, user type email en html5-->
+		<p>
+			<label for="mail">Email</label>
+			<input type="email" required name="mail" id="mail" tabindex="3" placeholder="Email">
+		</p>
+		<!-- limpiar el formulario-->
+		<p>
+			<input type="reset" name="borrar">
+		
+		<!-- enviar-->
+		
+			<input type="submit" name="enviar">
+		</p>
+	</form>
+</body>
+</html>

@@ -82,3 +82,29 @@ Python en bigData es el lenguaje que domina
 Lenguajes usados en Google:
 	Go https://golang.org/
 	Dart(gmail hecho en Dart) https://www.dartlang.org/
+
+16-1-18
+Gestor de contenidos - CMS, basados en Php y MySQL
+	Wordpress
+	Joomla - LMS (Learning Management System) interfaz poco optimizada, estructura demasiado compleja
+	Drupal - tiene ofertas profesionales (segun Juan)
+	Mambo
+
+Gestor de social media: Hootsuite prueba 30 dias gratis, despues minimo 20€
+
+Wordpress
+	2 partes principales:
+		Temas (Themes): los hay gratuitos y de pago.
+		Plugins
+	2 versiones:
+		wordpress.com en la nube gratuito, para uso doméstico
+		wordpress.org para uso profesional
+
+DIRECCION DE WORDPRESS
+	https://cursorubyrails.wordpress.com/wp-admin/index.php
+
+Estructura de datos por defecto, separados en tablas:
+	Paginas
+	Comentarios
+	Medios - fotos, videos... subidos
+	Enlaces

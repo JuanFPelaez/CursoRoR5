@@ -22,25 +22,35 @@ end
 
 def main
 	puts "Introduce el límite inferior del rango de numeros para comprobar si son kaprekar"
-  m=gets.chomp.to_i
-	puts "Introduce el límite superior del rango de numeros para comprobar si son kaprekar"
-	n=gets.chomp.to_i		#guardamos en n el dato de entrada de teclado como int
-	#n=n.to_i
-	if n>=1		#solo hacemos cuentas si recibimos al menos un 1
-		a=[]
-		i=m
-		n.times do
-			if (kaprekar i) then a<<i end
-			i+=1
-		end
-		if a.length > 0 #comporbamos que haya al menos un resultado positivo
-			puts "En el rango #{m}-#{n} los números #{a} son Kaprekar"
-		else
-				puts "Ningún numero del rango #{m}-#{n} es Kaprekar"
-		end
-	else
-	  puts "El número introducido es inválido \n\r"
+  m=gets.chomp 	#leer de teclado
+	if m.to_i<1
+		puts "Dato erróneo\n\r"
 		main
+	else
+		puts "Introduce el límite superior del rango de numeros para comprobar si son kaprekar"
+		n=gets.chomp		#guardamos en n el dato de entrada de teclado como int
+		if n.to_i<1
+			puts "Dato erróneo\n\r"
+			main
+		else
+			#n=n.to_i
+			if m.to_i>=1&&n.to_i>=1		#solo hacemos cuentas si recibimos al menos un 1
+				a=[]
+				i=m.to_i
+				n.to_i.times do
+					if (kaprekar i) then a<<i end
+					i+=1
+				end
+				if a.length > 0 #comporbamos que haya al menos un resultado positivo
+					puts "En el rango #{m}-#{n} los números enteros #{a} son Kaprekar"
+				else
+						puts "Ningún numero del rango #{m}-#{n} es Kaprekar"
+				end
+			else
+			  puts "\n\rEl rango introducido es inválido \n\r"
+				main
+			end
+		end
 	end
 end
 

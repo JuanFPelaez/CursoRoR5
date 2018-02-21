@@ -1,3 +1,6 @@
+#notas para mejorar
+#relacion entre el numero 10,100,500 y el valor X,C,D... -> hash clave,valor
+#secciones con repeticion: III,XX,MMM, dividir entre el valor significativo
 #rules
 #1  ->  I   4  ->  IV
 #5  ->  V   9  ->  IX
@@ -11,7 +14,7 @@ class Integer #extendemos la clase de enteros
     puts "Entero inválido" unless to_romans_rango?self
     #r es el resultado
     r=[]
-    #si length == 4 hacer millares 1,2 o 3-> M,MM,MMM
+    #no hace falta mirar length, n.times ya lo hace
     #unidades, casos
     #1->I 4->IV 5->V 9->IX --> rango 1-3: I,II,III; 4:IV; 5:V; 6-8:VI,VII,VIII, 9:IX
     #unidades: modulo 10, decenas k/10%10, centenas k/10²%10, millares k/10⁴%10
@@ -52,6 +55,19 @@ class Integer #extendemos la clase de enteros
   def to_romans_rango? int
     int<4000 && int>=1
   end
+
+  def to_romans_v2
+    puts "Entero inválido" unless to_romans_rango?self
+    #r es el resultado
+    r=[]
+    #h es el hash de claves
+    h=Hash[1,'I',5,'V',10,'X',50,'L',100,'C',500,'D',1000,'M']
+    #si length == 4 hacer millares 1,2 o 3-> M,MM,MMM
+    #unidades, casos
+    #1->I 4->IV 5->V 9->IX --> rango 1-3: I,II,III; 4:IV; 5:V; 6-8:VI,VII,VIII, 9:IX
+    #unidades: modulo 10, decenas k/10%10, centenas k/10²%10, millares k/10⁴%10
+
+  end
 end
 
 def test
@@ -67,7 +83,8 @@ end
 def main
   loop do
     puts "Introduce un entero inferior a 4000 para pasar a romanos"
-    puts "#{m=gets.chomp.to_i.to_romans} \r\n\r\n"
+    puts "#{m=gets.chomp.to_i.to_romans_v2 unless m=='test'} \r\n\r\n"
+    puts test if m=='test'
   end
 end
 main

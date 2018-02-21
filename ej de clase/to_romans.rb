@@ -1,4 +1,4 @@
-           #special cases
+#rules
 #1  ->  I   4  ->  IV
 #5  ->  V   9  ->  IX
 #10 ->  X   40 ->  XL
@@ -6,17 +6,38 @@
 #100 -> C   400->  CD
 #500 -> D   900->  CM
 #1000-> M
-class Integer
+class Integer #extendemos la clase de enteros
   def to_romans
-    puts "Número inválido" unless to_romans_rango?self
+    puts "Entero inválido" unless to_romans_rango?self
     #r es el resultado
     r=[]
-    #empezamos izquierda?
     #si length == 4 hacer millares 1,2 o 3-> M,MM,MMM
-    #si empezamos por unidades podemos ir haciendo %10
-    #empezamos unidades, casos
+    #unidades, casos
     #1->I 4->IV 5->V 9->IX --> rango 1-3: I,II,III; 4:IV; 5:V; 6-8:VI,VII,VIII, 9:IX
-    #cogemos unidades: modulo 10, decenas modulo 10², centenas 10³, millares 10⁴
+    #unidades: modulo 10, decenas k/10%10, centenas k/10²%10, millares k/10⁴%10
+    thousands = self/1000%10
+    thousands.times do r<<'M'end if thousands<4
+
+    hundreds = self/100%10
+    hundreds.times do r<<'C'end if hundreds<4
+    r<<'CD' if hundreds==4
+    r<<'D' if hundreds==5
+    if hundreds>5 && hundreds<9
+      r<<'D'
+      (hundreds-5).times do r<<'C'end
+    end
+    r<<'CM' if hundreds==9
+
+    dozens = self/10%10
+    dozens.times do r<<'X'end if dozens<4
+    r<<'XL' if dozens==4
+    r<<'L' if dozens==5
+    if dozens>5 && dozens<9
+      r<<'L'
+      (dozens-5).times do r<<'X'end
+    end
+    r<<'XC' if dozens==9
+
     units = self%10**1
     units.times do r<<'I'end if units<4
     r<<'IV' if units==4
@@ -26,15 +47,28 @@ class Integer
       (units-5).times do r<<'I'end
     end
     r<<'IX' if units==9
-
     r.join("")
   end
   def to_romans_rango? int
     int<4000 && int>=1
   end
 end
-n=1
-9.times do
-  puts n.to_romans
-  n+=1
+
+def test
+  i=3550
+  n=i
+  loop do
+    puts "#{n} -> #{n.to_romans}"
+    n+=1
+    break if n==i+500
+  end
 end
+
+def main
+  loop do
+    puts "Introduce un entero inferior a 4000 para pasar a romanos"
+    puts "#{m=gets.chomp.to_i.to_romans} \r\n\r\n"
+  end
+end
+main
+#test

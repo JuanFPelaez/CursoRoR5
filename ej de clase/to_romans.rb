@@ -61,12 +61,12 @@ class Integer #extendemos la clase de enteros
     #r es el resultado
     r=[]
     #h es el hash de claves
-    h=Hash[1,'I',5,'V',10,'X',50,'L',100,'C',500,'D',1000,'M']
-    #si length == 4 hacer millares 1,2 o 3-> M,MM,MMM
+    h=Hash[1000,'M',500,'D',100,'C',50,'L',10,'X',100,'C',5,'V',1,'I']
+    h.each do |index, code????|
+    r<<(self/1000).times h[1000]
     #unidades, casos
     #1->I 4->IV 5->V 9->IX --> rango 1-3: I,II,III; 4:IV; 5:V; 6-8:VI,VII,VIII, 9:IX
     #unidades: modulo 10, decenas k/10%10, centenas k/10²%10, millares k/10⁴%10
-
   end
 end
 

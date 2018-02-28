@@ -31,6 +31,7 @@ Front
 	Todo se apoya sobre javascript
 		Angular: proyectos medianos y grandes (prog orientada a objetos)
 		Vue.js: mas ligero pero menos estructurado, mejor para proyectos mas pequeños
+    
 Back
 	Php
 	Java

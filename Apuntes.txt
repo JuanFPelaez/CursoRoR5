@@ -9,7 +9,7 @@ Herramientas:
 
 Inconveniente de Ruby:
 	Problema de rendimiento, es mas lento que otras opciones como PHP o incluso java
-	
+
 Las versiones lts(long time support) son las apropiadas para produccion (se asegura soporte durante 4 o mas años)
 
 13-12-17

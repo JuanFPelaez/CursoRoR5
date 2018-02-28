@@ -6,7 +6,7 @@ Herramientas:
     mysqlworkbench
     RVM: rubyversionmanager
     Git
-
+    
 Inconveniente de Ruby:
 	Problema de rendimiento, es mas lento que otras opciones como PHP o incluso java
 
@@ -31,7 +31,7 @@ Front
 	Todo se apoya sobre javascript
 		Angular: proyectos medianos y grandes (prog orientada a objetos)
 		Vue.js: mas ligero pero menos estructurado, mejor para proyectos mas pequeños
-    
+
 Back
 	Php
 	Java

@@ -18,7 +18,7 @@
     font: small-caps 40px/40px "Times New Roman", serif;
     color: #282;
     text-align:center;
-    
+
     img{
         float:left;
         position: relative;
@@ -37,22 +37,22 @@
 
 #columns{
         background:#141;
-        
+
         #main{
             margin-left:17em;
             padding:1em;
-            background:white;   
+            background:white;
         }
         #side{
              float:left;
              padding:1em 2em;
              width:13em;
              background:#141;
-             
+
              form, div{
                  display:inline;
              }
-             
+
              #cart{
                 font-size:smaller;
                 color:white;
@@ -60,13 +60,13 @@
                     border-top:1px dotted #595;
                     border-bottom:1px dotted #595;
                     margin-bottom:10px;
-                    
+
                     td{
                        font-size:11px !important;
                     }
                 }
              }
-             
+
                 ul{
                         padding:0;
                         li{
@@ -76,6 +76,6 @@
                                     font-size:small;
                                 }
                         }
-                }   
+                }
         }
 }

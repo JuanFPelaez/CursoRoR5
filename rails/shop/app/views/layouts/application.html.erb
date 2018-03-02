@@ -16,12 +16,17 @@
 
     <div id="columns">
       <div id=side>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Questions</a></li>
-          <li><a href="/">News</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
+        <% if @cart %>
+          <div id="cart">
+            <%= render @cart%>
+          </div>
+        <% end %>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Questions</a></li>
+            <li><a href="/">News</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
       </div>
       <div id="main">
         <%= yield %>

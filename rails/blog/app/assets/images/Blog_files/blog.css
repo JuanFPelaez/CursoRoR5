@@ -1,0 +1,44 @@
+/* line 2, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 150%, sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #77d;
+}
+/* line 10, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+  height: 100%;
+}
+/* line 17, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog img {
+  height: 60px;
+  width: 60px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: absolute;
+}
+/* line 25, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin-left: 70px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  color: #227;
+}
+/* line 33, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog p {
+  margin: 0 0 0 70px;
+}
+/* line 36, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog .date {
+  font-weight: bold;
+}
+/* line 39, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/blog.scss */
+.blog .intro {
+  margin-bottom: 5px;
+}

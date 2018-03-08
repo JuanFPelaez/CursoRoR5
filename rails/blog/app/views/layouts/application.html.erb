@@ -8,10 +8,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="<%= controller.controller_name %>">
     <div id="banner">
-      <%= image_tag("logo.png") %>
-      <%= @page_title || "Pragmatic Bookshelf"%>
+      <%= image_tag("test.png") %>      
+      <h1><%=@page_title || "Blog in Development"%></h1>
     </div>
     <div id="columns">
       <div id="side">

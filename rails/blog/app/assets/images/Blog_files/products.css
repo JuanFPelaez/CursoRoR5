@@ -1,0 +1,46 @@
+/* line 6, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 9, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 13, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_image {
+  width: 60px;
+  height: 70px;
+}
+/* line 17, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_description {
+  width: 60%;
+}
+/* line 20, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_description dl {
+  margin: 0;
+}
+/* line 24, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 30, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_description dd {
+  margin: 0;
+}
+/* line 34, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 40, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_line_even {
+  background: #e0f8f8;
+}
+/* line 43, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/products.scss */
+.products .list_line_odd {
+  background: #f8b0f8;
+}

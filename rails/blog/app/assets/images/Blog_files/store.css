@@ -1,0 +1,46 @@
+/* line 2, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 150%, sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #77d;
+}
+/* line 10, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+/* line 16, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: absolute;
+}
+/* line 23, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  color: #227;
+}
+/* line 32, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store p, .store div.price_line {
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0.8em;
+}
+/* line 37, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store p form, .store p div, .store div.price_line form, .store div.price_line div {
+  display: inline;
+}
+/* line 43, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/store.scss */
+.store .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 3em;
+}

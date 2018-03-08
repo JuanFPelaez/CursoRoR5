@@ -1,5 +1,5 @@
-.store {
-    h1{
+.blog {
+    h2{
      margin: 0;
      padding-bottom: 0.5em;
      font: 150%, sans-serif;
@@ -11,10 +11,12 @@
         overflow:auto;
         margin-top: 1em;
         border-bottom: 1px dotted #77d;
+        height: 100%;
     }
 
     img{
-        width:80px;
+        height:60px;
+        width:60px;
         margin-right:5px;
         margin-bottom:5px;
         position:absolute;
@@ -23,27 +25,19 @@
     h3{
         font-size:120%;
         font-family: sans-serif;
-        margin-left: 100px;
+        margin-left: 70px;
         margin-top: 0px;
         margin-bottom: 2px;
         color: #227;
     }
-
-    p, div.date_line{
-        margin-left:100px;
-        margin-top:0px;
-        margin-bottom:0.8em;
-
-        form, div {
-            display:inline;
-        }
-
+    p{
+      margin: 0 0 0 70px;
     }
-
-    .price{
-        color: #44a;
-        font-weight:bold;
-        margin-right:3em;
+    .date{
+      font-weight: bold;
+    }
+    .intro{
+        margin-bottom: 5px;
     }
 
 }

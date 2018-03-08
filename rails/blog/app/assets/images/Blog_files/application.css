@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 15, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#banner {
+  color: #FFF;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  height: 130px;
+}
+/* line 24, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#banner h1 {
+  margin-top: 100px;
+}
+/* line 27, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#banner img {
+  float: left;
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+
+/* line 35, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold, smaller sans-serif;
+}
+
+/* line 44, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns {
+  background: #FFF;
+  height: 100%;
+}
+/* line 48, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #main {
+  margin-left: 17em;
+  padding: 1em;
+  background: white;
+  height: 100%;
+}
+/* line 54, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side {
+  float: left;
+  padding: 1em 2em;
+  height: 100%;
+  width: 13em;
+  background: #2F2;
+}
+/* line 61, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side form, #columns #side div {
+  display: inline;
+}
+/* line 65, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side #cart {
+  font-size: smaller;
+  color: white;
+}
+/* line 68, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side #cart table {
+  border-top: 1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
+}
+/* line 73, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side #cart table td {
+  font-size: 11px !important;
+}
+/* line 79, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side ul {
+  padding: 0;
+}
+/* line 81, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side ul li {
+  list-style: none;
+}
+/* line 83, /home/ruby/CursoRoR5/rails/blog/app/assets/stylesheets/application.scss */
+#columns #side ul li a {
+  color: #bfb;
+  font-size: small;
+}

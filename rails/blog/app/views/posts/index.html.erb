@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <p id="notice"><%= notice %> </p>
+<% end %>
 
 <h1>Posts</h1>
 
@@ -8,6 +10,7 @@
       <th>Title</th>
       <th>Introduction</th>
       <th>Content</th>
+      <th>Url</th>
       <th>Image url</th>
       <th>Date</th>
       <th colspan="3"></th>
@@ -20,6 +23,7 @@
         <td><%= post.title %></td>
         <td><%= post.introduction %></td>
         <td><%= post.content %></td>
+        <td><%= post.url %></td>
         <td><%= post.image_url %></td>
         <td><%= post.date %></td>
         <td><%= link_to 'Show', post %></td>

@@ -3,10 +3,12 @@
 <% end %>
 <h2>Posts list</h2>
 <% @posts.each do |post| %>
-  <div class="entry">
-    <%= image_tag(post.image_url)%>
-    <h3><%= post.title %></h3>
-    <p class="date"><%= post.date %></p>
-    <p class="intro"><%= sanitize(post.introduction) %></p>
-  </div>
+  <%= link_to post_path post, :action => 'go' do %>
+    <div class="entry">
+      <%= image_tag(post.image_url)%>
+      <p class="date"><%= post.created_at.to_s.split(" ").first %></p>
+      <h3><%= post.title %></h3>
+      <p class="intro"><%= sanitize(post.introduction) %></p>
+    </div>
+  <% end %>
 <% end %>

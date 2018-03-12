@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <p id="notice"><%= notice %> </p>
+<% end %>
 
 <p>
   <strong>Title:</strong>
@@ -13,6 +15,11 @@
 <p>
   <strong>Content:</strong>
   <%= @post.content %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @post.url %>
 </p>
 
 <p>

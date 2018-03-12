@@ -1,17 +1,33 @@
 .blog {
+    a{
+      padding: 0px;
+      font-size: 0%;
+    }
+    a:hover {
+      padding:0 1px;
+      font-size: 0%;
+      background: #000;
+    }
+    a:visited {
+      padding: 0;
+      font-size: 0%;
+    }
     h2{
      margin: 0;
      padding-bottom: 0.5em;
      font: 150%, sans-serif;
-     color: #226;
-     border-bottom: 3px dotted #77d;
+     color: #FFF;
+     font-weight: bolder;
+     border-bottom: 3px dotted #FFF;
     }
 
     .entry{
         overflow:auto;
         margin-top: 1em;
-        border-bottom: 1px dotted #77d;
+        border: 1px dotted #FFF;
+        border-radius: 5px;
         height: 100%;
+        padding: 5px;
     }
 
     img{
@@ -20,21 +36,26 @@
         margin-right:5px;
         margin-bottom:5px;
         position:absolute;
-    }
-
-    h3{
-        font-size:120%;
-        font-family: sans-serif;
-        margin-left: 70px;
-        margin-top: 0px;
-        margin-bottom: 2px;
-        color: #227;
-    }
-    p{
-      margin: 0 0 0 70px;
+        border: none;
+        border-radius: 2px;
     }
     .date{
       font-weight: bold;
+      display: inline;
+    }
+    h3{
+        display: inline;
+        font-size:20px;
+        font-family: sans-serif;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        color: #FFF;
+        height: 20px;
+        width: 70%;
+    }
+    p{
+      padding: 1px 0 1px 70px;
     }
     .intro{
         margin-bottom: 5px;

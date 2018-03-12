@@ -8,8 +8,27 @@
 Post.delete_all
 Post.create!(
   title: "First Post!",
-  introduction: "Let's test the intro!",
-  content: "Just a text demo for the blog",
+  introduction: "Test intro 1",
+  content: "Test content 1",
+  url: "url_de_prueba_1",
   image_url: "test.png",
-  date: "2018/3/7"
+  date: "2018/3/12"
+  )
+
+Post.create!(
+  title: "Second Post!",
+  introduction: "Test intro 2",
+  content: "Test content 2",
+  url: "url_de_prueba_2",
+  image_url: "test.png",
+  date: "2018/3/12"
+  )
+
+Post.create!(
+  title: "Third Post!",
+  introduction: "Test intro 3",
+  content: "Test content 3",
+  url: "url_de_prueba_3",
+  image_url: "test.png",
+  date: "2018/3/12"
   )
